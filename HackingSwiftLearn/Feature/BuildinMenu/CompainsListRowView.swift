@@ -39,7 +39,7 @@ struct ItemRow: View {
     
     var body: some View {
         HStack {
-            Image(item.thumbnailImage) // Make sure `thumbnailImage` is a valid image name or resource
+            Image(item.thumbnailImage)
             VStack(alignment: .leading) {
                 Text(item.name)
                 Text("\(item.price)$")
