@@ -1,11 +1,16 @@
-# SwiftUI Tutorial: Building a Complete Project
+# SwiftUI Menu Builder
 
-This project is a tutorial for building a complete iOS application using SwiftUI from scratch. The tutorial covers both basic and advanced features of SwiftUI, guiding you through the creation of a modern iOS app.
+This repository contains a complete SwiftUI tutorial project demonstrating how to build a fully functional menu application for iOS. The project covers various SwiftUI features and best practices for creating a modern, user-friendly interface.
+
+## Overview
+
+This project is designed to teach you how to:
+- Build a user interface using `NavigationView`, `List`, and `Section`.
+- Manage and display data from a JSON file using Swift’s `Codable` protocol.
+- Implement custom views and manage dynamic content with `ForEach`.
 
 ## Features
 
-- **User Interface**: Creating dynamic and elegant user interfaces with SwiftUI.
-- **State Management**: Managing state with @State, @Binding, @ObservedObject, and @EnvironmentObject.
-- **Navigation**: Using SwiftUI's navigation tools for screen transitions.
-- **Data Management**: Fetching and displaying JSON data.
-- **Animations**: Creating animations and transition effects with SwiftUI.
+- **Dynamic Menu Sections**: Automatically load and display menu sections from a JSON file.
+- **Custom Views**: Create reusable views with SwiftUI's declarative syntax.
+- **Navigation**: Utilize `NavigationView` and `Section` to organize and present content.
