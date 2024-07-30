@@ -30,6 +30,7 @@ struct CompainsListRow: View {
             }
             .navigationTitle("Menu")
             .listStyle(.grouped)
+            
         }
     }
 }
