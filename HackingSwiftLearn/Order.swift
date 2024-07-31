@@ -9,7 +9,7 @@
 import SwiftUI
 
 final class Order: ObservableObject {
-    var items = [MenuItem]()
+     @Published var items = [MenuItem]()
     
     func dummyInit() -> Self {
         items = [MenuItem.example]
