@@ -8,8 +8,13 @@
 
 import SwiftUI
 
-class Order {
+final class Order: ObservableObject {
     var items = [MenuItem]()
+    
+    func dummyInit() -> Self {
+        items = [MenuItem.example]
+        return self
+    }
 
     var total: Int {
         if items.count > 0 {

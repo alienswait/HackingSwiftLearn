@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		277A629B2C5A59660043B5CC /* EnvironmentObjectView .swift in Sources */ = {isa = PBXBuildFile; fileRef = 277A629A2C5A59660043B5CC /* EnvironmentObjectView .swift */; };
+		277A629F2C5A5B470043B5CC /* OrderViewEnviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277A629E2C5A5B470043B5CC /* OrderViewEnviroment.swift */; };
 		278CF9EE2C57BE4C007B5107 /* HackingSwiftLearnApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278CF9ED2C57BE4C007B5107 /* HackingSwiftLearnApp.swift */; };
 		278CF9F02C57BE4C007B5107 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278CF9EF2C57BE4C007B5107 /* ContentView.swift */; };
 		278CF9F22C57BE4D007B5107 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 278CF9F12C57BE4D007B5107 /* Assets.xcassets */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		277A629A2C5A59660043B5CC /* EnvironmentObjectView .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnvironmentObjectView .swift"; sourceTree = "<group>"; };
+		277A629E2C5A5B470043B5CC /* OrderViewEnviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewEnviroment.swift; sourceTree = "<group>"; };
 		278CF9EA2C57BE4C007B5107 /* HackingSwiftLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackingSwiftLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		278CF9ED2C57BE4C007B5107 /* HackingSwiftLearnApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackingSwiftLearnApp.swift; sourceTree = "<group>"; };
 		278CF9EF2C57BE4C007B5107 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 				278CFA052C57C1DB007B5107 /* BuildingMenu.swift */,
 				278CFA0A2C57D71E007B5107 /* CompainsListRowView.swift */,
 				27C1320D2C591E5A00A36CAF /* ItemDetailView.swift */,
+				277A629A2C5A59660043B5CC /* EnvironmentObjectView .swift */,
+				277A629E2C5A5B470043B5CC /* OrderViewEnviroment.swift */,
 			);
 			path = BuildinMenu;
 			sourceTree = "<group>";
@@ -197,6 +203,7 @@
 			files = (
 				27C1320E2C591E5A00A36CAF /* ItemDetailView.swift in Sources */,
 				27C1320B2C59162100A36CAF /* DisplayDetailScreenWithNavigation.swift in Sources */,
+				277A629F2C5A5B470043B5CC /* OrderViewEnviroment.swift in Sources */,
 				278CFA092C57CB8E007B5107 /* BundleRead+Extension.swift in Sources */,
 				27C132082C5910C600A36CAF /* Image+Extensions.swift in Sources */,
 				278CF9FE2C57C02C007B5107 /* Menu.swift in Sources */,
@@ -206,6 +213,7 @@
 				27C132052C59036D00A36CAF /* PolishingDesingWithColor.swift in Sources */,
 				278CFA0B2C57D71E007B5107 /* CompainsListRowView.swift in Sources */,
 				278CFA062C57C1DB007B5107 /* BuildingMenu.swift in Sources */,
+				277A629B2C5A59660043B5CC /* EnvironmentObjectView .swift in Sources */,
 				278CF9EE2C57BE4C007B5107 /* HackingSwiftLearnApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
