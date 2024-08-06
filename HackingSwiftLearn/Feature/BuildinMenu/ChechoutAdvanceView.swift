@@ -16,6 +16,8 @@ struct ChechoutAdvanceView: View {
     @State private var loyalityNumber = ""
     let tipAmounts = [10,15,20,25,0]
     @State private var tipAmount = 15
+    
+    @State private var showingPaymentAlert = false
        
     var totalPrice: String {
         let total = Double(order.total)
@@ -50,11 +52,16 @@ struct ChechoutAdvanceView: View {
                    
                 Section("Total: \(totalPrice)") {
                     Button("Confirm Order") {
-                           // place order
+                        showingPaymentAlert.toggle()
                     }
                 }
             }.navigationTitle("Payment")
             .navigationBarTitleDisplayMode(.inline)
+            .alert("Order confermed", isPresented: $showingPaymentAlert){
+                // add buttons here
+            }message: {
+                Text("Your total was \(totalPrice) - thank you!")
+            }
         }
     }
 }

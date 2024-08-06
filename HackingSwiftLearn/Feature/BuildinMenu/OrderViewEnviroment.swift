@@ -21,19 +21,28 @@ struct OrderViewEnvironment: View {
                             Text("$\(item.price)")
                         }
                     }
+                    
+                    .onDelete(perform: deleteItems)
                 }
                 
                 Section {
                     NavigationLink("Place Order") {
                         ChechoutAdvanceView()
-                            .environmentObject(order)
-                        
                     }
                 }
+                .disabled(order.items.isEmpty)
                 
             }
             .navigationTitle("Order")
+            .toolbar{
+                EditButton()
+            }
         }
+    }
+    
+    
+    func deleteItems(at offsets: IndexSet) {
+        order.items.remove(atOffsets: offsets)
     }
 }
 
