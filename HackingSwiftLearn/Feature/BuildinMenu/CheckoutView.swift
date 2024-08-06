@@ -35,9 +35,9 @@ struct CheckoutView: View {
 
 
 enum PaymentType: String, CaseIterable{
-    case cash
-    case creditCard
-    case dinePoints
+    case cash = "Cash"
+    case creditCard = "Credit Card"
+    case dinePoints = "Dine Points"
 }
 
 #Preview {

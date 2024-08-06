@@ -25,7 +25,7 @@ struct OrderViewEnvironment: View {
                 
                 Section {
                     NavigationLink("Place Order") {
-                        Text("Checkout")
+                        ChechoutAdvanceView()
                     }
                 }
             }
