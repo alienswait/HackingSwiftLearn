@@ -29,7 +29,7 @@ struct ChechoutAdvanceView: View {
 
     var body: some View {
         NavigationView{
-            VStack {
+            Form {
                 Section{
                     Picker("How do you want to pay?", selection: $paymentType) {
                         ForEach(PaymentType.allCases, id: \.self){ item in
