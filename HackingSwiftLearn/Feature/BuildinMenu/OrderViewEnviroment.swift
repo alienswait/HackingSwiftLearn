@@ -26,8 +26,11 @@ struct OrderViewEnvironment: View {
                 Section {
                     NavigationLink("Place Order") {
                         ChechoutAdvanceView()
+                            .environmentObject(order)
+                        
                     }
                 }
+                
             }
             .navigationTitle("Order")
         }

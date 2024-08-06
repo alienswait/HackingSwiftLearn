@@ -10,67 +10,55 @@ import SwiftUI
 struct ChechoutAdvanceView: View {
     
     @State private var paymentType: PaymentType = PaymentType.cash
-    
-    @State private var addLoyalityDetails: Bool = false
+    @EnvironmentObject var order: Order
+       
+    @State private var addLoyalityDetails = false
     @State private var loyalityNumber = ""
-    @State private var tipAmmounts: TipAmmounts = .zero
-    
-    
-    func checkValidaton() -> Bool {
-        if tipAmmounts == .zero{
-            return false
-        }
-        if loyalityNumber.isEmpty{
-            return false
-        }
-        return true
+    let tipAmounts = [10,15,20,25,0]
+    @State private var tipAmount = 15
+       
+    var totalPrice: String {
+        let total = Double(order.total)
+        let tipValue = total / 100 * Double(tipAmount)
+        return (total + tipValue).formatted(.currency(code: "USD"))
     }
-    
-
+       
     var body: some View {
-        NavigationView{
+        NavigationView {
             Form {
-                Section{
+                Section {
                     Picker("How do you want to pay?", selection: $paymentType) {
-                        ForEach(PaymentType.allCases, id: \.self){ item in
+                        ForEach(PaymentType.allCases, id: \.self) { item in
                             Text("\(item.rawValue)")
-                            
                         }
                     }.pickerStyle(.navigationLink)
                 }
                 Toggle("Add iDine loyalty card", isOn: $addLoyalityDetails.animation())
-                
-                if(addLoyalityDetails){
+                   
+                if(addLoyalityDetails) {
                     TextField("Enter your iDine ID", text: $loyalityNumber)
-                    Picker("Tips", selection: $tipAmmounts) {
-                        ForEach(TipAmmounts.allCases, id: \.self){ item in
-                            Text("\(item.rawValue.description)")
-                            
+                }
+                   
+                Section("Add a tip?") {
+                    Picker("Percentage:", selection: $tipAmount) {
+                        ForEach(tipAmounts, id: \.self) {
+                            Text("\($0)%")
                         }
-                    }.pickerStyle(.menu)
+                    }
+                    .pickerStyle(.segmented)
                 }
-                
-                Button{
-                    
-                }label: {
-                    Text("Complete")
+                   
+                Section("Total: \(totalPrice)") {
+                    Button("Confirm Order") {
+                           // place order
+                    }
                 }
-                
             }.navigationTitle("Payment")
-
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
-
 #Preview {
     ChechoutAdvanceView()
-}
-
-
-enum TipAmmounts: Int, CaseIterable{
-    case ten = 10
-    case fiftten = 15
-    case twenty = 20
-    case twentyFive = 25
-    case zero = 0
+        .environmentObject(Order().dummyInit())
 }

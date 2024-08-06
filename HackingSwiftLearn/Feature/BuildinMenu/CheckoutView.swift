@@ -15,7 +15,7 @@ struct CheckoutView: View {
     @State private var paymentType: PaymentType = PaymentType.cash
     
     var body: some View {
-        VStack {
+        Form {
             Section{
                 Picker("How do you want to pay?", selection: $paymentType) {
                     ForEach(PaymentType.allCases, id: \.self){ item in
