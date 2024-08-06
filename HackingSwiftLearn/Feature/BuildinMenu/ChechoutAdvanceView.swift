@@ -50,9 +50,6 @@ struct ChechoutAdvanceView: View {
                     }.pickerStyle(.menu)
                 }
                 
-                
-                
-                Spacer()
                 Button{
                     
                 }label: {
@@ -61,7 +58,7 @@ struct ChechoutAdvanceView: View {
                 
             }.navigationTitle("Payment")
 
-        }.padding(.all, 8)
+        }
     }
 }
 
