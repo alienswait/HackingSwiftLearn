@@ -27,3 +27,18 @@ SwiftUI: Leveraged for building the user interface, offering a declarative synta
 @EnvironmentObject and @State: Used to manage and observe the state of the app, ensuring smooth data flow and user interactions.
 
 @ObservedObject: Implemented to manage the order state and reflect changes in real-time across different views.
+
+
+
+
+
+
+https://github.com/user-attachments/assets/ff8200a3-5a7e-4432-928a-cd5d899a876c
+
+
+
+
+
+
+
+
