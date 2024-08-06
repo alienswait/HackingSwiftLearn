@@ -1,4 +1,4 @@
-# SwiftUI Menu Builder
+# SwiftUI Food Ordering App!
 
 This app combines a user-friendly interface with advanced functionality to streamline food ordering. Here’s a comprehensive overview of the project:
 
