@@ -1,16 +1,29 @@
 # SwiftUI Menu Builder
 
-This repository contains a complete SwiftUI tutorial project demonstrating how to build a fully functional menu application for iOS. The project covers various SwiftUI features and best practices for creating a modern, user-friendly interface.
+This app combines a user-friendly interface with advanced functionality to streamline food ordering. Here’s a comprehensive overview of the project:
 
-## Overview
+Key Features:
 
-This project is designed to teach you how to:
-- Build a user interface using `NavigationView`, `List`, and `Section`.
-- Manage and display data from a JSON file using Swift’s `Codable` protocol.
-- Implement custom views and manage dynamic content with `ForEach`.
+Modern User Interface: Designed using SwiftUI to provide a clean and intuitive user experience.
 
-## Features
+Dynamic Pricing: Calculates and displays the total price, including a tip based on user selection. The total updates in real-time as the tip percentage changes.
 
-- **Dynamic Menu Sections**: Automatically load and display menu sections from a JSON file.
-- **Custom Views**: Create reusable views with SwiftUI's declarative syntax.
-- **Navigation**: Utilize `NavigationView` and `Section` to organize and present content.
+Order Confirmation: Includes an alert that confirms the order and shows the total amount due, enhancing user interaction and feedback.
+
+Menu and Order Tabs: Two main tabs for easy navigation—Menu for selecting items and Order for reviewing and finalizing the purchase.
+
+Automatic Order Management: Automatically lists selected items in the Order tab when the 'Order This' button is pressed.
+
+Dietary Alerts: Provides alerts for gluten-free and vegan options, ensuring users are informed about dietary restrictions.
+
+Enhanced Form Layout: Utilized SwiftUI’s Form component to create a more organized and visually appealing layout.
+
+
+
+Technical Details:
+
+SwiftUI: Leveraged for building the user interface, offering a declarative syntax and modern design capabilities.
+
+@EnvironmentObject and @State: Used to manage and observe the state of the app, ensuring smooth data flow and user interactions.
+
+@ObservedObject: Implemented to manage the order state and reflect changes in real-time across different views.
